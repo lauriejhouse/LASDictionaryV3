@@ -13,6 +13,8 @@
 		8CACAB6C225FC54A007FBE5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CACAB6B225FC54A007FBE5B /* Assets.xcassets */; };
 		8CACAB6F225FC54A007FBE5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CACAB6D225FC54A007FBE5B /* LaunchScreen.storyboard */; };
 		8CACAB792264E05F007FBE5B /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CACAB782264E05F007FBE5B /* MainTabBarController.swift */; };
+		8CBD697D227099B50048427B /* DictionarySearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBD697C227099B50048427B /* DictionarySearchController.swift */; };
+		8CBD6980227099F60048427B /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBD697F227099F60048427B /* Dictionary.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		8CACAB6E225FC54A007FBE5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8CACAB70225FC54A007FBE5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8CACAB782264E05F007FBE5B /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		8CBD697C227099B50048427B /* DictionarySearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionarySearchController.swift; sourceTree = "<group>"; };
+		8CBD697F227099F60048427B /* Dictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 		8CACAB63225FC549007FBE5B /* LASDictionaryV3 */ = {
 			isa = PBXGroup;
 			children = (
+				8CBD697E227099EC0048427B /* Models */,
+				8CBD697B227099A10048427B /* Controllers */,
 				8CACAB64225FC549007FBE5B /* AppDelegate.swift */,
 				8CACAB66225FC549007FBE5B /* ViewController.swift */,
 				8CACAB68225FC549007FBE5B /* Main.storyboard */,
@@ -65,6 +71,22 @@
 				8CACAB782264E05F007FBE5B /* MainTabBarController.swift */,
 			);
 			path = LASDictionaryV3;
+			sourceTree = "<group>";
+		};
+		8CBD697B227099A10048427B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8CBD697C227099B50048427B /* DictionarySearchController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8CBD697E227099EC0048427B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8CBD697F227099F60048427B /* Dictionary.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +161,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8CACAB67225FC549007FBE5B /* ViewController.swift in Sources */,
+				8CBD6980227099F60048427B /* Dictionary.swift in Sources */,
 				8CACAB65225FC549007FBE5B /* AppDelegate.swift in Sources */,
+				8CBD697D227099B50048427B /* DictionarySearchController.swift in Sources */,
 				8CACAB792264E05F007FBE5B /* MainTabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
