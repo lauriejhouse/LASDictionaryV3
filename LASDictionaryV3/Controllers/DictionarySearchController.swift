@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DictionarySearchController: UITableViewController {
+class DictionarySearchController: UITableViewController, UISearchBarDelegate {
     
     let dictionary = [
     Dictionary(name: "Absorb", description: "Sign this with this letter"),
@@ -17,18 +17,35 @@ class DictionarySearchController: UITableViewController {
     ]
     
     let cellId = "cellId"
+    //UISearch Controller
+    
+    let searchController = UISearchController(searchResultsController: nil)
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        navigationItem.searchController = searchController
+        navigationItem.hidesSearchBarWhenScrolling = false
+        searchController.searchBar.delegate = self
+        
+
         
         //1. register a cell for tableview
         
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellId)
     }
     
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        print(searchText)
+        //later implement alamofire with custom api? ****NEED TO MAKE MY OWN API****
+    }
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
          //returning 0 makes it so only shows results when typing in the search box.
-        return dictionary.count
+//        return dictionary.count
+        return 0
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

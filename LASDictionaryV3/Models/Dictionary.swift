@@ -8,6 +8,7 @@
 
 import Foundation
 
+//*** Going to have to also implement the LBTA youtube project, with the podcast project to get every function/thing needed for the dictionary app.
 
 struct Dictionary {
     
